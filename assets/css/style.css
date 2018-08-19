@@ -29,7 +29,7 @@ h2{
     color: #4aaaa5;
     border-bottom: 3px solid #cccccc;
     width: 100%;
-    padding: 10px 0 20px 0  ;
+    padding: 10px 0 20px 10px  ;
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -38,7 +38,7 @@ a{
     right: 20px;
 }
 .topnav{
-    align-content: center;
+    /* align-content: center; */
     padding: 0 20% 0 20%;
     float: left;
     width: 100%;
@@ -48,6 +48,13 @@ a{
     margin: 0;
     border: 1px solid #cccccc;
     background-color: #ffffff;
+}
+
+.navButton{
+    float: left;
+    text-align: center;
+    color: #777777;
+    text-decoration: none;
 }
 
 .center {
@@ -76,12 +83,12 @@ a{
     background: white;
     float: left;
 }
-.active{
-    background-color: aqua;
-}
+
 
 p{
     color: #777777;
+    overflow: auto;
+    display: block;
 }
 
 .project {
@@ -90,6 +97,10 @@ p{
     float: left;
     position: relative;
     margin: 20px;
+}
+.projImg{
+    width: 200px;
+    height: 150px;
 }
 
 .contactForm{
@@ -139,6 +150,235 @@ textarea{
     border-top: #4aaaa5 solid 5px;
     padding: 20px 0 20px 0;
     text-align: center;
-    position: fixed;
+    position: static;
     bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+    body{
+        width: 980px;
+    }
+    .topnav{
+        position: static;
+        padding: 0;
+    }
+    h1{
+        margin: 0 320px 0 10px;
+        width: 300px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .navButton{
+        width: 80px;
+        padding: 15px 10px 10px 10px;
+        height: 20px
+    }
+    .content{
+        margin: 20px 20px 60px 20px;
+        width: 708px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .profile{
+        height: 50%;
+        width: 50%;
+        margin-right: 10px;
+        clear:both;
+    }
+    .imgDiv{
+        margin-right: 10px;
+        clear:both;
+    }
+
+    .wrap{
+        margin-left: 0px;
+        overflow:auto;
+        display:block;
+    }
+
+    .project {
+        width: 320px;
+        height: 250px;
+        float: left;
+        position: relative;
+        margin: 10px;
+    }
+
+    .projImg{
+        width: 300px;
+        height: 225px;
+    }
+
+    .projectName{
+        bottom: 40px;
+        width: 300px;
+    }
+
+    input{
+        width: 668px;
+        margin: 0 0 20px 0;
+    }
+
+    .contactForm{
+        width: 708px;
+    }
+
+    form{
+        width: 708px;
+    }
+
+    textarea{
+        width: 668px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        width: 768px;
+    }
+    .topnav{
+        position: static;
+        padding: 0;
+    }
+    h1{
+        margin: 0 100px 0 10px;
+        width: 300px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .navButton{
+        width: 80px;
+        padding: 15px 10px 10px 10px;
+        height: 20px
+    }
+    .content{
+        margin: 20px 20px 60px 20px;
+        width: 708px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .profile{
+        height: 50%;
+        width: 50%;
+        margin-right: 10px;
+        clear:both;
+    }
+    .imgDiv{
+        margin-right: 10px;
+        clear:both;
+    }
+
+    .wrap{
+        margin-left: 0px;
+        overflow:auto;
+        display:block;
+    }
+
+    .project {
+        width: 320px;
+        height: 250px;
+        float: left;
+        position: relative;
+        margin: 10px;
+    }
+
+    .projImg{
+        width: 300px;
+        height: 225px;
+    }
+
+    .projectName{
+        bottom: 40px;
+        width: 300px;
+    }
+
+    input{
+        width: 668px;
+        margin: 0 0 20px 0;
+    }
+
+    .contactForm{
+        width: 708px;
+    }
+
+    form{
+        width: 708px;
+    }
+
+    textarea{
+        width: 668px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    body{
+        width: 640px;
+    }
+    .topnav{
+        position: static;
+        padding: 0;
+    }
+    h1{
+        margin: 0;
+        width: 600px;
+        text-align: center;
+    }
+    h1::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .navButton{
+        width: 190px;
+        padding: 20px 10px 20px 10px;
+    }
+    .content{
+        margin: 20px 20px 60px 20px;
+        width: 580px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .profile{
+        height: 100%;
+        width: 100%;
+    }
+
+    .project {
+        width: 580px;
+        height: 450px;
+        float: left;
+        position: relative;
+        margin: 10px;
+    }
+
+    .projImg{
+        width: 560px;
+        height: 425px;
+    }
+
+    .projectName{
+        bottom: 50px;
+        width: 560px;
+    }
+
+    input{
+        width: 540px;
+        margin: 0 0 20px 0;
+    }
+
+    .contactForm{
+        width: 580px;
+    }
+
+    form{
+        width: 580px;
+    }
+
+    textarea{
+        width: 540px;
+    }
 }
